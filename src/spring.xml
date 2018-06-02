@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<!-- bean defination and target class of that object should create -->
+	<bean id="triangle" class="org.soumen.springdemo.Triangle">
+		
+		<!-- you can configure attribute value too using xml directly from here -->
+		<property name="type" value="equilateral" /> 
+	</bean>
+</beans>
