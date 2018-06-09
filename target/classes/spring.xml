@@ -3,9 +3,17 @@
 <beans>
 
 	<!-- bean defination and target class of that object should create -->
-	<bean id="triangle" class="org.soumen.springdemo.Triangle">
+	<bean id="car" class="org.soumen.springdemo.Car">
 		
 		<!-- you can configure attribute value too using xml directly from here -->
-		<property name="type" value="equilateral" /> 
+		<property name="type" value="Bike" />
+		
+		<!-- intializing car class constructor from the xml only -->
+		<!-- <constructor-arg value="Red" />  -->
+		
+		<!-- intializing two argument constructor from xml only  -->
+		<constructor-arg index="0" value="100000" />
+		<constructor-arg index="1" value="150KMPH" />
+		
 	</bean>
 </beans>

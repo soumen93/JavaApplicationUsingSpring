@@ -38,10 +38,10 @@ public class Draw {
 		ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
 		
 		//get the object from the context only by passing its name
-		Triangle triangle=(Triangle) context.getBean("triangle");
+		Car car=(Car) context.getBean("car");
 		
 		//call any method of the object
-		triangle.draw();
+		car.start();
 		
 	}
 
@@ -56,10 +56,10 @@ public class Draw {
 		
 		//getting the trinagle object form the created bean by passing the id mention the bean configuration
 		//i.e. 'triangle'
-		Triangle triangle=(Triangle) bean.getBean("triangle");
+		Car car=(Car) bean.getBean("car");
 				
 		//now calling the draw method of the triangle obejct
-		triangle.draw();
+		car.start();
 	}
 
 }
